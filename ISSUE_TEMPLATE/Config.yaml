@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 ディスカッション（質問・相談）
+    url: https://github.com/YOUR_ORG/YOUR_REPO/discussions
+    about: 仕様の質問や設計の相談はこちら

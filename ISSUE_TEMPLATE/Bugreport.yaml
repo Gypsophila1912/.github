@@ -1,0 +1,78 @@
+name: 🐛 バグ報告
+description: 再現可能なバグを報告する
+labels: ["bug", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます。できるだけ詳しく記入してください。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: バグの内容を一言で
+      placeholder: 例）ログイン後にリダイレクトが正常に動かない
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: バグを再現するための手順
+      placeholder: |
+        1. ...を開く
+        2. ...をクリック
+        3. エラーが発生する
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する動作
+      placeholder: 例）ダッシュボードにリダイレクトされるべき
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      placeholder: 例）404 ページが表示される
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境情報
+      description: OS、ブラウザ、言語バージョン など
+      placeholder: |
+        - OS: macOS 14.x
+        - Node: 22.x
+        - ブラウザ: Chrome 124
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: ログ・スタックトレース
+      description: エラーログがあれば貼ってください
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 確認事項
+      options:
+        - label: 既存のイシューを検索して重複がないか確認した
+          required: true
+        - label: 最新の main ブランチで再現することを確認した
+          required: false

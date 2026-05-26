@@ -1,0 +1,46 @@
+name: 📋 タスク / 作業メモ
+description: リファクタリング・ドキュメント整備・調査など
+labels: ["chore"]
+assignees: []
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      placeholder: 例）認証まわりのコードをリファクタリングする
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景・目的
+      placeholder: なぜこのタスクが必要か
+    validations:
+      required: false
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: ToDoリスト
+      description: 完了条件を箇条書きで
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: カテゴリ
+      options:
+        - リファクタリング
+        - ドキュメント
+        - 調査・スパイク
+        - 依存関係の更新
+        - テスト追加
+        - その他
+    validations:
+      required: true
