@@ -1,0 +1,84 @@
+# GitHub ラベル定義
+# 適用方法: make labels（要 gh CLI）または actions/labeler で自動適用
+
+labels:
+  # === 種別 ===
+  - name: bug
+    color: "d73a4a"
+    description: 再現可能なバグ
+
+  - name: enhancement
+    color: "a2eeef"
+    description: 新機能・改善提案
+
+  - name: chore
+    color: "e4e669"
+    description: リファクタ・依存更新・設定変更など
+
+  - name: docs
+    color: "0075ca"
+    description: ドキュメントの追加・修正
+
+  - name: test
+    color: "bfd4f2"
+    description: テストの追加・修正
+
+  # === ステータス ===
+  - name: triage
+    color: "ededed"
+    description: 内容確認中・優先度未定
+
+  - name: in progress
+    color: "fbca04"
+    description: 対応中
+
+  - name: blocked
+    color: "e11d48"
+    description: 他の作業待ちでブロックされている
+
+  - name: wontfix
+    color: "ffffff"
+    description: 対応しないと判断
+
+  - name: duplicate
+    color: "cfd3d7"
+    description: 既存のイシューと重複
+
+  # === レビュー ===
+  - name: needs review
+    color: "7057ff"
+    description: レビュー待ち
+
+  - name: changes requested
+    color: "e4e669"
+    description: 修正依頼あり
+
+  - name: approved
+    color: "0e8a16"
+    description: レビュー承認済み
+
+  # === 優先度 ===
+  - name: "priority: high"
+    color: "b60205"
+    description: 優先度高・早急に対応
+
+  - name: "priority: medium"
+    color: "fbca04"
+    description: 優先度中
+
+  - name: "priority: low"
+    color: "c2e0c6"
+    description: 優先度低・余裕があれば
+
+  # === その他 ===
+  - name: dependencies
+    color: "0366d6"
+    description: 依存関係の更新（Dependabot など）
+
+  - name: good first issue
+    color: "7057ff"
+    description: 初めての貢献に向いているイシュー
+
+  - name: help wanted
+    color: "008672"
+    description: 手伝ってもらえると助かる
